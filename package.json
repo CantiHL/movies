@@ -3,7 +3,10 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "precompress": "{{ executes BEFORE the `compress` script }}",
+        "compress": "{{ run command to compress files }}",
+        "postcompress": "{{ executes AFTER `compress` script }}"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.14",
@@ -14,4 +17,5 @@
         "tailwindcss": "^3.3.3",
         "vite": "^4.0.0"
     }
+
 }
