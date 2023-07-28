@@ -3,10 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "precompress": "{{ executes BEFORE the `compress` script }}",
-        "compress": "{{ run command to compress files }}",
-        "postcompress": "{{ executes AFTER `compress` script }}"
+        "build": ["vite build","laravel build --output public"]
     },
     "devDependencies": {
         "autoprefixer": "^10.4.14",
